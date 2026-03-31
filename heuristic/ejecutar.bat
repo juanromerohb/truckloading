@@ -1,0 +1,1 @@
+renault.exe -Iter 30 -InputFile	../../../../instancias/Camiones130/

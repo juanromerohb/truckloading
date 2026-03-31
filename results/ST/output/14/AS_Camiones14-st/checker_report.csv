@@ -1,0 +1,5 @@
+scope;anomaly;data;
+Constraint I1;different qty between inputs and outputs for item ident = 0090018000_08062023002847;input item qty = 1;output item qty = 0
+Constraint I1;different qty between inputs and outputs for item ident = 0090018000_08062023003045;input item qty = 1;output item qty = 0
+Constraint I1;different qty between inputs and outputs for item ident = 0090018000_08062023012069;input item qty = 1;output item qty = 0
+Constraint I1;different qty between inputs and outputs for item ident = 0090018000_08062023013360;input item qty = 1;output item qty = 0

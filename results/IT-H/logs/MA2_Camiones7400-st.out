@@ -1,0 +1,52 @@
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Oracle Linux Server 9.4")
+
+CPU model: Intel(R) Xeon(R) CPU E5-2660 v4 @ 2.00GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 28 physical cores, 28 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3598.296469532
+SoftMemLimit  16
+NumericFocus  1
+Threads  1
+
+Academic license 2690100 - for non-commercial use only - registered to ju___@uclm.es
+Optimize a model with 12208 rows, 2830 columns and 45669 nonzeros
+Model fingerprint: 0x5f2db6b5
+Variable types: 56 continuous, 2774 integer (2774 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+13]
+  Objective range  [1e+09, 5e+09]
+  Bounds range     [8e+02, 1e+04]
+  RHS range        [1e+00, 2e+14]
+Warning: Model contains large matrix coefficient range
+Warning: Model contains large objective coefficients
+Warning: Model contains large rhs
+
+Loaded user MIP start with objective 7.5438e+10
+
+Presolve removed 8826 rows and 1738 columns
+Presolve time: 0.37s
+Presolved: 3382 rows, 1092 columns, 11432 nonzeros
+Variable types: 43 continuous, 1049 integer (1049 binary)
+
+Root relaxation: objective 7.938450e+10, 693 iterations, 0.04 seconds (0.03 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 7.9384e+10    0  132 7.5438e+10 7.9384e+10  5.23%     -    0s
+     0     0 7.9092e+10    0  133 7.5438e+10 7.9092e+10  4.84%     -    0s
+     0     0 7.9092e+10    0  131 7.5438e+10 7.9092e+10  4.84%     -    0s
+
+Cutting planes:
+  Learned: 2
+
+Explored 1 nodes (1459 simplex iterations) in 0.62 seconds (0.33 work units)
+Thread count was 1 (of 28 available processors)
+
+Solution count 1: 7.5438e+10 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.543800000000e+10, best bound 7.543800000000e+10, gap 0.0000%
+
+User-callback calls 828, time in user-callback 0.00 sec

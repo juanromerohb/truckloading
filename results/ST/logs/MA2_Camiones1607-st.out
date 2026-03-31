@@ -1,0 +1,48 @@
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Oracle Linux Server 9.4")
+
+CPU model: Intel(R) Xeon(R) CPU E5-2660 v4 @ 2.00GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 28 physical cores, 28 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3599.685418625
+SoftMemLimit  16
+NumericFocus  1
+Threads  1
+
+Academic license 2690100 - for non-commercial use only - registered to ju___@uclm.es
+Optimize a model with 3563 rows, 918 columns and 12284 nonzeros
+Model fingerprint: 0x08278860
+Variable types: 34 continuous, 884 integer (884 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+13]
+  Objective range  [2e+09, 6e+09]
+  Bounds range     [1e+03, 1e+04]
+  RHS range        [1e+00, 2e+14]
+Warning: Model contains large matrix coefficient range
+Warning: Model contains large objective coefficients
+Warning: Model contains large rhs
+Found heuristic solution: objective -0.0000000
+Presolve removed 777 rows and 0 columns
+Presolve time: 0.07s
+Presolved: 2786 rows, 918 columns, 10539 nonzeros
+Variable types: 34 continuous, 884 integer (884 binary)
+
+Root relaxation: objective 8.949163e+10, 382 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 8.9492e+10    0   23   -0.00000 8.9492e+10      -     -    0s
+H    0     0                    7.794546e+10 8.9492e+10  14.8%     -    0s
+H    0     0                    8.790914e+10 8.9492e+10  1.80%     -    0s
+     0     0 8.9492e+10    0   23 8.7909e+10 8.9492e+10  1.80%     -    0s
+
+Explored 1 nodes (1553 simplex iterations) in 0.16 seconds (0.11 work units)
+Thread count was 1 (of 28 available processors)
+
+Solution count 3: 8.79091e+10 7.79455e+10 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.790914292000e+10, best bound 8.790914292000e+10, gap 0.0000%
+
+User-callback calls 447, time in user-callback 0.00 sec

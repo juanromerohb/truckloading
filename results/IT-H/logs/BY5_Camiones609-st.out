@@ -1,0 +1,54 @@
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Oracle Linux Server 9.4")
+
+CPU model: Intel(R) Xeon(R) CPU E5-2660 v4 @ 2.00GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 28 physical cores, 28 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3593.345248674
+SoftMemLimit  16
+NumericFocus  1
+Threads  1
+
+Academic license 2690100 - for non-commercial use only - registered to ju___@uclm.es
+Optimize a model with 105758 rows, 23363 columns and 727842 nonzeros
+Model fingerprint: 0x9b5a1f71
+Variable types: 154 continuous, 23209 integer (23209 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+13]
+  Objective range  [1e+09, 3e+09]
+  Bounds range     [1e+03, 1e+04]
+  RHS range        [1e+00, 2e+14]
+Warning: Model contains large matrix coefficient range
+Warning: Model contains large objective coefficients
+Warning: Model contains large rhs
+
+Loaded user MIP start with objective 8.37398e+10
+
+Presolve removed 76592 rows and 15840 columns (presolve time = 5s)...
+Presolve removed 85346 rows and 17847 columns
+Presolve time: 9.61s
+Presolved: 20412 rows, 5516 columns, 62185 nonzeros
+Variable types: 111 continuous, 5405 integer (5405 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    8.4730560e+10   2.436313e+04   0.000000e+00     10s
+    2144    8.4730560e+10   5.634735e+04   0.000000e+00     10s
+
+Root relaxation: infeasible, 2630 iterations, 0.41 seconds (0.32 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0      8.3740e+10 8.3740e+10  0.00%     -   10s
+
+Explored 1 nodes (2630 simplex iterations) in 10.14 seconds (5.85 work units)
+Thread count was 1 (of 28 available processors)
+
+Solution count 1: 8.37398e+10 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.373984000000e+10, best bound 8.373984000000e+10, gap 0.0000%
+
+User-callback calls 1095, time in user-callback 0.00 sec

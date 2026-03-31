@@ -1,0 +1,56 @@
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Oracle Linux Server 9.4")
+
+CPU model: Intel(R) Xeon(R) CPU E5-2660 v4 @ 2.00GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 28 physical cores, 28 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3599.862948339
+SoftMemLimit  16
+NumericFocus  1
+Threads  1
+
+Academic license 2690100 - for non-commercial use only - registered to ju___@uclm.es
+Optimize a model with 1765 rows, 468 columns and 6088 nonzeros
+Model fingerprint: 0x0cd3c1c2
+Variable types: 24 continuous, 444 integer (444 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+13]
+  Objective range  [5e+09, 7e+09]
+  Bounds range     [1e+03, 1e+04]
+  RHS range        [1e+00, 2e+14]
+Warning: Model contains large matrix coefficient range
+Warning: Model contains large objective coefficients
+Warning: Model contains large rhs
+Found heuristic solution: objective -0.0000000
+Presolve removed 353 rows and 0 columns
+Presolve time: 0.05s
+Presolved: 1412 rows, 468 columns, 6212 nonzeros
+Variable types: 24 continuous, 444 integer (444 binary)
+
+Root relaxation: objective 7.125120e+10, 338 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 7.1251e+10    0    4   -0.00000 7.1251e+10      -     -    0s
+H    0     0                    2.430720e+10 7.1251e+10   193%     -    0s
+     0     0 7.1251e+10    0   19 2.4307e+10 7.1251e+10   193%     -    0s
+     0     0 7.1251e+10    0   14 2.4307e+10 7.1251e+10   193%     -    0s
+H    0     0                    7.125120e+10 7.1251e+10  0.00%     -    0s
+     0     0 7.1251e+10    0   14 7.1251e+10 7.1251e+10  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 4
+  Clique: 5
+  Relax-and-lift: 2
+
+Explored 1 nodes (885 simplex iterations) in 0.12 seconds (0.07 work units)
+Thread count was 1 (of 28 available processors)
+
+Solution count 3: 7.12512e+10 2.43072e+10 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.125120000000e+10, best bound 7.125120000000e+10, gap 0.0000%
+
+User-callback calls 566, time in user-callback 0.00 sec

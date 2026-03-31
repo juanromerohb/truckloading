@@ -1,0 +1,10 @@
+1
+  best_bound_volume_fill_rate: 0.8051045555555554
+  termination_status: TIME_LIMIT
+  gap: 0.030302860705900606
+  best_bound: 7.956043217999998e10
+  primal_status: FEASIBLE_POINT
+  objective_value: 7.722043218e10
+  volume_fill_rate: 0.7814251384335155
+  solve_time: 3600.67314934
+

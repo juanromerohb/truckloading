@@ -1,0 +1,53 @@
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Oracle Linux Server 9.4")
+
+CPU model: Intel(R) Xeon(R) CPU E5-2660 v4 @ 2.00GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 28 physical cores, 28 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3599.307425886
+SoftMemLimit  16
+NumericFocus  1
+Threads  1
+
+Academic license 2690100 - for non-commercial use only - registered to ju___@uclm.es
+Optimize a model with 2467 rows, 590 columns and 9202 nonzeros
+Model fingerprint: 0x768ef70c
+Variable types: 24 continuous, 566 integer (566 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+13]
+  Objective range  [8e+09, 8e+09]
+  Bounds range     [2e+02, 1e+04]
+  RHS range        [1e+00, 2e+14]
+Warning: Model contains large matrix coefficient range
+Warning: Model contains large objective coefficients
+Warning: Model contains large rhs
+Found heuristic solution: objective -0.0000000
+Presolve removed 2006 rows and 406 columns
+Presolve time: 0.03s
+Presolved: 461 rows, 184 columns, 1921 nonzeros
+Variable types: 12 continuous, 172 integer (172 binary)
+
+Root relaxation: objective 9.221520e+10, 117 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 9.2215e+10    0   18   -0.00000 9.2215e+10      -     -    0s
+H    0     0                    8.812320e+10 9.2215e+10  4.64%     -    0s
+H    0     0                    8.828160e+10 9.2215e+10  4.46%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  MIR: 2
+  GUB cover: 1
+  Zero half: 1
+
+Explored 1 nodes (295 simplex iterations) in 0.05 seconds (0.02 work units)
+Thread count was 1 (of 28 available processors)
+
+Solution count 3: 8.82816e+10 8.81232e+10 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.828160000000e+10, best bound 8.828160000000e+10, gap 0.0000%
+
+User-callback calls 602, time in user-callback 0.00 sec

@@ -1,0 +1,99 @@
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Oracle Linux Server 9.4")
+
+CPU model: Intel(R) Xeon(R) CPU E5-2660 v4 @ 2.00GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 28 physical cores, 28 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3599.149991496
+SoftMemLimit  16
+NumericFocus  1
+Threads  1
+
+Academic license 2690100 - for non-commercial use only - registered to ju___@uclm.es
+Optimize a model with 3607 rows, 867 columns and 13402 nonzeros
+Model fingerprint: 0xda08fda3
+Variable types: 30 continuous, 837 integer (837 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+13]
+  Objective range  [9e+08, 8e+09]
+  Bounds range     [3e+02, 1e+04]
+  RHS range        [1e+00, 2e+14]
+Warning: Model contains large matrix coefficient range
+Warning: Model contains large objective coefficients
+Warning: Model contains large rhs
+Found heuristic solution: objective -0.0000000
+Presolve removed 2597 rows and 499 columns
+Presolve time: 0.06s
+Presolved: 1010 rows, 368 columns, 3477 nonzeros
+Variable types: 18 continuous, 350 integer (350 binary)
+
+Root relaxation: objective 9.155520e+10, 126 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 9.1555e+10    0    6   -0.00000 9.1555e+10      -     -    0s
+     0     0 9.1555e+10    0   22   -0.00000 9.1555e+10      -     -    0s
+     0     0 9.1555e+10    0    2   -0.00000 9.1555e+10      -     -    0s
+H    0     0                    7.509600e+09 9.1555e+10  1119%     -    0s
+H    0     0                    1.501920e+10 9.1555e+10   510%     -    0s
+     0     0 9.1555e+10    0    9 1.5019e+10 9.1555e+10   510%     -    0s
+H    0     0                    3.898800e+10 9.1555e+10   135%     -    0s
+     0     0 9.1555e+10    0    4 3.8988e+10 9.1555e+10   135%     -    0s
+H    0     0                    4.649760e+10 9.1555e+10  96.9%     -    0s
+     0     0 9.1555e+10    0    8 4.6498e+10 9.1555e+10  96.9%     -    0s
+     0     0 9.1555e+10    0    2 4.6498e+10 9.1555e+10  96.9%     -    0s
+     0     0 9.1555e+10    0    4 4.6498e+10 9.1555e+10  96.9%     -    0s
+H    0     0                    4.766760e+10 9.1555e+10  92.1%     -    0s
+     0     0 9.1555e+10    0    4 4.7668e+10 9.1555e+10  92.1%     -    0s
+     0     0 9.1555e+10    0    4 4.7668e+10 9.1555e+10  92.1%     -    0s
+H    0     0                    7.770600e+10 9.1555e+10  17.8%     -    0s
+     0     2 9.1555e+10    0    4 7.7706e+10 9.1555e+10  17.8%     -    0s
+H   54    25                    9.011520e+10 9.1555e+10  1.60%   7.0    0s
+  2181   122 infeasible   23      9.0115e+10 9.1555e+10  1.60%   7.7    5s
+  3473   131 9.1555e+10   24   21 9.0115e+10 9.1555e+10  1.60%  18.3   10s
+  4588   182 9.1555e+10   21   29 9.0115e+10 9.1555e+10  1.60%  23.8   15s
+  5939   189 9.1555e+10   29   24 9.0115e+10 9.1555e+10  1.60%  25.7   20s
+  7061   184 9.1555e+10   29   10 9.0115e+10 9.1555e+10  1.60%  26.9   25s
+  8402    21 9.1555e+10   32   25 9.0115e+10 9.1555e+10  1.60%  27.1   30s
+  9662    94 infeasible   30      9.0115e+10 9.1555e+10  1.60%  28.1   35s
+ 11256   113 9.1555e+10   38   12 9.0115e+10 9.1555e+10  1.60%  27.6   40s
+ 12685   100 9.1555e+10   27   35 9.0115e+10 9.1555e+10  1.60%  27.7   45s
+ 13889   104 9.1555e+10   32   21 9.0115e+10 9.1555e+10  1.60%  28.2   50s
+ 15343    87 9.1555e+10   28   36 9.0115e+10 9.1555e+10  1.60%  28.1   55s
+ 16285   129 9.1285e+10   37   19 9.0115e+10 9.1555e+10  1.60%  29.1   60s
+ 17441   199 9.1555e+10   33   14 9.0115e+10 9.1555e+10  1.60%  29.4   65s
+ 18080   201 9.1285e+10   35   25 9.0115e+10 9.1555e+10  1.60%  29.4   71s
+ 18883   249 infeasible   31      9.0115e+10 9.1555e+10  1.60%  29.6   75s
+ 19832   342 9.1555e+10   36   21 9.0115e+10 9.1555e+10  1.60%  30.0   80s
+ 20682   485 infeasible   43      9.0115e+10 9.1555e+10  1.60%  30.5   85s
+ 21720   561 9.1285e+10   43   33 9.0115e+10 9.1285e+10  1.30%  30.9   90s
+ 23097   439 9.1285e+10   44   21 9.0115e+10 9.1285e+10  1.30%  31.1   95s
+ 24479   352 infeasible   45      9.0115e+10 9.1285e+10  1.30%  31.2  100s
+ 25972   196 9.1285e+10   41   27 9.0115e+10 9.1285e+10  1.30%  31.0  105s
+ 27128   141 9.1285e+10   43   16 9.0115e+10 9.1285e+10  1.30%  31.1  110s
+
+Cutting planes:
+  Learned: 79
+  Gomory: 21
+  Lift-and-project: 13
+  Cover: 250
+  Implied bound: 320
+  Projected implied bound: 1
+  Clique: 5
+  MIR: 95
+  Mixing: 1
+  Flow cover: 290
+  Inf proof: 302
+  RLT: 11
+  Relax-and-lift: 36
+
+Explored 27640 nodes (871737 simplex iterations) in 111.58 seconds (53.95 work units)
+Thread count was 1 (of 28 available processors)
+
+Solution count 8: 9.01152e+10 7.7706e+10 4.76676e+10 ... -0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.011520000000e+10, best bound 9.011520000000e+10, gap 0.0000%
+
+User-callback calls 123888, time in user-callback 0.07 sec

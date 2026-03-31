@@ -1,0 +1,54 @@
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Oracle Linux Server 9.4")
+
+CPU model: Intel(R) Xeon(R) CPU E5-2660 v4 @ 2.00GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 28 physical cores, 28 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3593.314247081
+SoftMemLimit  16
+NumericFocus  1
+Threads  1
+
+Academic license 2690100 - for non-commercial use only - registered to ju___@uclm.es
+Optimize a model with 83722 rows, 18810 columns and 415509 nonzeros
+Model fingerprint: 0x3fb427a6
+Variable types: 144 continuous, 18666 integer (18666 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+13]
+  Objective range  [1e+09, 1e+09]
+  Bounds range     [1e+03, 1e+04]
+  RHS range        [1e+00, 2e+14]
+Warning: Model contains large matrix coefficient range
+Warning: Model contains large objective coefficients
+Warning: Model contains large rhs
+
+Loaded user MIP start with objective 8.073e+10
+
+Presolve removed 25081 rows and 2699 columns
+Presolve time: 2.66s
+Presolved: 58641 rows, 16111 columns, 211879 nonzeros
+Variable types: 144 continuous, 15967 integer (15967 binary)
+Root relaxation presolved: 58641 rows, 16111 columns, 211879 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    4415    8.0730000e+10   5.210987e+04   0.000000e+00      5s
+
+Root relaxation: cutoff, 6382 iterations, 3.25 seconds (2.68 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0      8.0730e+10 8.0730e+10  0.00%     -    6s
+
+Explored 1 nodes (6382 simplex iterations) in 6.17 seconds (4.69 work units)
+Thread count was 1 (of 28 available processors)
+
+Solution count 1: 8.073e+10 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.073000000000e+10, best bound 8.073000000000e+10, gap 0.0000%
+
+User-callback calls 731, time in user-callback 0.00 sec

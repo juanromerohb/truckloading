@@ -1,0 +1,84 @@
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Oracle Linux Server 9.4")
+
+CPU model: Intel(R) Xeon(R) CPU E5-2660 v4 @ 2.00GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 28 physical cores, 28 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3596.980816888
+SoftMemLimit  16
+NumericFocus  1
+Threads  1
+
+Academic license 2690100 - for non-commercial use only - registered to ju___@uclm.es
+Optimize a model with 22637 rows, 5204 columns and 94129 nonzeros
+Model fingerprint: 0x4646dbd0
+Variable types: 76 continuous, 5128 integer (5128 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+13]
+  Objective range  [5e+08, 5e+09]
+  Bounds range     [9e+02, 1e+04]
+  RHS range        [1e+00, 2e+14]
+Warning: Model contains large matrix coefficient range
+Warning: Model contains large objective coefficients
+Warning: Model contains large rhs
+Found heuristic solution: objective -0.0000000
+Presolve removed 7281 rows and 857 columns
+Presolve time: 0.79s
+Presolved: 15356 rows, 4347 columns, 54778 nonzeros
+Variable types: 72 continuous, 4275 integer (4275 binary)
+
+Root relaxation: objective 7.436332e+10, 2080 iterations, 0.23 seconds (0.17 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 7.4363e+10    0  185   -0.00000 7.4363e+10      -     -    1s
+     0     0 7.4363e+10    0  159   -0.00000 7.4363e+10      -     -    1s
+H    0     0                    4.406400e+10 7.4363e+10  68.8%     -    2s
+H    0     0                    5.418900e+10 7.4363e+10  37.2%     -    2s
+     0     0 7.4363e+10    0  209 5.4189e+10 7.4363e+10  37.2%     -    2s
+H    0     0                    6.450150e+10 7.4123e+10  14.9%     -    2s
+     0     0 7.4123e+10    0  205 6.4502e+10 7.4123e+10  14.9%     -    2s
+     0     0 7.3287e+10    0  128 6.4502e+10 7.3287e+10  13.6%     -    3s
+     0     0 7.3287e+10    0  128 6.4502e+10 7.3287e+10  13.6%     -    3s
+     0     0 7.3287e+10    0  193 6.4502e+10 7.3287e+10  13.6%     -    4s
+     0     0 7.3287e+10    0  186 6.4502e+10 7.3287e+10  13.6%     -    4s
+     0     0 7.3175e+10    0  233 6.4502e+10 7.3175e+10  13.4%     -    4s
+     0     0 7.3175e+10    0  217 6.4502e+10 7.3175e+10  13.4%     -    4s
+     0     0 7.3124e+10    0  181 6.4502e+10 7.3124e+10  13.4%     -    4s
+     0     0 7.3124e+10    0  182 6.4502e+10 7.3124e+10  13.4%     -    4s
+     0     0 7.3074e+10    0  106 6.4502e+10 7.3074e+10  13.3%     -    4s
+     0     0 7.3074e+10    0   66 6.4502e+10 7.3074e+10  13.3%     -    4s
+H    0     0                    6.574950e+10 7.2950e+10  11.0%     -    5s
+     0     0 7.2950e+10    0   69 6.5750e+10 7.2950e+10  11.0%     -    5s
+     0     0 7.2950e+10    0  109 6.5750e+10 7.2950e+10  11.0%     -    5s
+H    0     0                    7.006950e+10 7.2950e+10  4.11%     -    5s
+     0     0 7.2950e+10    0  130 7.0070e+10 7.2950e+10  4.11%     -    5s
+     0     0 7.2950e+10    0  128 7.0070e+10 7.2950e+10  4.11%     -    5s
+     0     0 7.2950e+10    0  121 7.0070e+10 7.2950e+10  4.11%     -    5s
+     0     0 7.2950e+10    0  113 7.0070e+10 7.2950e+10  4.11%     -    6s
+     0     0 7.2950e+10    0   97 7.0070e+10 7.2950e+10  4.11%     -    6s
+     0     0 7.2950e+10    0   81 7.0070e+10 7.2950e+10  4.11%     -    6s
+     0     0 7.2950e+10    0   87 7.0070e+10 7.2950e+10  4.11%     -    6s
+H    0     0                    7.294950e+10 7.2950e+10  0.00%     -    6s
+
+Cutting planes:
+  Gomory: 4
+  Cover: 57
+  Implied bound: 15
+  Clique: 9
+  MIR: 3
+  Flow cover: 45
+  GUB cover: 2
+  RLT: 11
+  Relax-and-lift: 9
+
+Explored 1 nodes (14368 simplex iterations) in 6.61 seconds (3.29 work units)
+Thread count was 1 (of 28 available processors)
+
+Solution count 7: 7.29495e+10 7.00695e+10 6.57495e+10 ... -0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.294950000000e+10, best bound 7.294950000000e+10, gap 0.0000%
+
+User-callback calls 2824, time in user-callback 0.00 sec

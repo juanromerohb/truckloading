@@ -1,0 +1,83 @@
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Oracle Linux Server 9.4")
+
+CPU model: Intel(R) Xeon(R) CPU E5-2660 v4 @ 2.00GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 28 physical cores, 28 logical processors, using up to 1 threads
+
+Non-default parameters:
+TimeLimit  3599.487169725
+SoftMemLimit  16
+NumericFocus  1
+Threads  1
+
+Academic license 2690100 - for non-commercial use only - registered to ju___@uclm.es
+Optimize a model with 9685 rows, 2436 columns and 33416 nonzeros
+Model fingerprint: 0x94e5ad31
+Variable types: 56 continuous, 2380 integer (2380 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+13]
+  Objective range  [9e+08, 6e+09]
+  Bounds range     [1e+03, 1e+04]
+  RHS range        [1e+00, 2e+14]
+Warning: Model contains large matrix coefficient range
+Warning: Model contains large objective coefficients
+Warning: Model contains large rhs
+Found heuristic solution: objective -0.0000000
+Presolve removed 1617 rows and 0 columns
+Presolve time: 0.18s
+Presolved: 8068 rows, 2436 columns, 30034 nonzeros
+Variable types: 56 continuous, 2380 integer (2380 binary)
+
+Root relaxation: objective 1.005540e+11, 919 iterations, 0.03 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1.0055e+11    0   48   -0.00000 1.0055e+11      -     -    0s
+H    0     0                    1.614600e+10 1.0055e+11   523%     -    0s
+     0     0 9.9757e+10    0  225 1.6146e+10 9.9757e+10   518%     -    0s
+H    0     0                    2.316600e+10 9.9593e+10   330%     -    0s
+     0     0 9.9593e+10    0  220 2.3166e+10 9.9593e+10   330%     -    0s
+     0     0 9.9037e+10    0  296 2.3166e+10 9.9037e+10   328%     -    0s
+     0     0 9.9037e+10    0  262 2.3166e+10 9.9037e+10   328%     -    0s
+     0     0 9.9037e+10    0  260 2.3166e+10 9.9037e+10   328%     -    0s
+     0     0 9.9037e+10    0  247 2.3166e+10 9.9037e+10   328%     -    0s
+     0     0 9.9037e+10    0  278 2.3166e+10 9.9037e+10   328%     -    0s
+H    0     0                    2.608200e+10 9.9037e+10   280%     -    0s
+     0     0 9.9037e+10    0  274 2.6082e+10 9.9037e+10   280%     -    0s
+     0     0 9.9037e+10    0   12 2.6082e+10 9.9037e+10   280%     -    1s
+H    0     0                    3.643320e+10 9.9037e+10   172%     -    1s
+     0     0 9.9037e+10    0   12 3.6433e+10 9.9037e+10   172%     -    1s
+     0     0 9.9037e+10    0    8 3.6433e+10 9.9037e+10   172%     -    1s
+     0     0 9.9037e+10    0    8 3.6433e+10 9.9037e+10   172%     -    1s
+     0     0 9.9037e+10    0    8 3.6433e+10 9.9037e+10   172%     -    1s
+     0     0 9.9037e+10    0    4 3.6433e+10 9.9037e+10   172%     -    1s
+     0     0 9.9037e+10    0    6 3.6433e+10 9.9037e+10   172%     -    1s
+     0     0 9.9037e+10    0    6 3.6433e+10 9.9037e+10   172%     -    1s
+H    0     0                    9.201720e+10 9.9037e+10  7.63%     -    2s
+     0     2 9.9037e+10    0    6 9.2017e+10 9.9037e+10  7.63%     -    2s
+   326   120 infeasible  184      9.2017e+10 9.9037e+10  7.63%  25.0    5s
+H  387   139                    9.552720e+10 9.9037e+10  3.67%  23.0    5s
+   762   382 9.9037e+10   11   48 9.5527e+10 9.9037e+10  3.67%  23.1   10s
+H  770   368                    9.903720e+10 9.9037e+10  0.00%  22.9   11s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 10
+  Implied bound: 5
+  Projected implied bound: 6
+  Clique: 38
+  MIR: 4
+  Flow cover: 28
+  GUB cover: 9
+  RLT: 1
+  Relax-and-lift: 22
+
+Explored 770 nodes (38734 simplex iterations) in 11.96 seconds (6.12 work units)
+Thread count was 1 (of 28 available processors)
+
+Solution count 8: 9.90372e+10 9.55272e+10 9.20172e+10 ... -0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.903720000000e+10, best bound 9.903720000000e+10, gap 0.0000%
+
+User-callback calls 6245, time in user-callback 0.00 sec
