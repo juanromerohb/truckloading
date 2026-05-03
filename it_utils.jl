@@ -231,7 +231,7 @@ function get_KHi(
 
     @constraint(model, height_limit, h[i] + sum((h[j] - hatH[j]) * s[j] for j in Omega_i) <= H)
     @constraint(model, weight_above_limit, sum(q[j] * s[j] for j in Omega_i) <= hatq[i])
-    @constraint(model, stackability_limit[j in Omega_i], 1 + sum(s[k] for k in Omega_i) <= n[j] * s[j] + n[i] * (1 - s[j]))
+    @constraint(model, stackability_limit[j in Omega_i], 1 + sum(s[k] for k in Omega_i) <= min(n[i], n[j]) * s[j] + n[i] * (1 - s[j]))
 
     optimize!(model)
 
@@ -264,7 +264,7 @@ function get_hatKHi(
 
     @constraint(model, height_limit, h[i] + sum((h[j] - hatH[j]) * s[j] for j in Omega_i) <= H)
     @constraint(model, weight_above_limit, sum(q[j] * s[j] for j in Omega_i) <= hatq[i])
-    @constraint(model, stackability_limit[j in Omega_i], 1 + sum(s[k] for k in Omega_i) <= n[j] * s[j] + n[i] * (1 - s[j]))
+    @constraint(model, stackability_limit[j in Omega_i], 1 + sum(s[k] for k in Omega_i) <= min(n[i], n[j]) * s[j] + n[i] * (1 - s[j]))
 
     optimize!(model)
 
@@ -297,7 +297,7 @@ function get_KQi(
 
     @constraint(model, height_limit, h[i] + sum((h[j] - hatH[j]) * s[j] for j in Omega_i) <= H)
     @constraint(model, weight_above_limit, sum(q[j] * s[j] for j in Omega_i) <= hatq[i])
-    @constraint(model, stackability_limit[j in Omega_i], 1 + sum(s[k] for k in Omega_i) <= n[j] * s[j] + n[i] * (1 - s[j]))
+    @constraint(model, stackability_limit[j in Omega_i], 1 + sum(s[k] for k in Omega_i) <= min(n[i], n[j]) * s[j] + n[i] * (1 - s[j]))
 
     optimize!(model)
 
@@ -532,7 +532,7 @@ function add_it_principal_constraints!(model::Model, datapack)
     @constraint(
         model,
         st_num[i in I, j in I; j in Omega[i]],
-        b[i] + sum(s[i, k] for k in Omega[i]) <= n[j] * s[i, j] + n[i] * (1 - s[i, j])
+        b[i] + sum(s[i, k] for k in Omega[i]) <= min(n[i], n[j]) * s[i, j] + n[i] * (1 - s[i, j])
     )
 
     @constraint(
