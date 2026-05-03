@@ -1,6 +1,6 @@
-# Exact and Decomposed Formulations for a Realistic Single-Truck Loading Problem with Stacking Constraints
+# Exact and matheuristic approaches for a realistic single-truck loading problem with stacking constraints
 
-This repository contains the reference implementation for the paper *Exact and decomposed formulations for a realistic single-truck loading problem with stacking constraints*. It implements exact and decomposed optimization models for a realistic single-truck loading problem in which items must be selected, stacked, and placed on a truck floor while satisfying compatibility, orientation, unloading-order, support, and axle-weight constraints. The codebase is written in Julia and uses JuMP with Gurobi to solve the MILP formulations. The repository also includes benchmark instances and archived experiment outputs used for the paper.
+This repository contains the reference implementation for the paper *Exact and matheuristic approaches for a realistic single-truck loading problem with stacking constraints*. It implements exact and decomposed optimization models for a realistic single-truck loading problem in which items must be selected, stacked, and placed on a truck floor while satisfying compatibility, orientation, unloading-order, support, and axle-weight constraints. The codebase is written in Julia and uses JuMP with Gurobi to solve the MILP formulations. The repository also includes benchmark instances and archived experiment outputs used for the paper.
 
 Implemented model variants:
 
