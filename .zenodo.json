@@ -1,0 +1,20 @@
+{
+  "title": "Exact and matheuristic approaches for a realistic single-truck loading problem with stacking constraints",
+  "upload_type": "software",
+  "description": "Source code, benchmark instances, and archived results accompanying the paper.",
+  "creators": [
+    {
+      "name": "Romero-del-Hombrebueno, Juan"
+    },
+    {
+      "name": "Alonso, María Teresa"
+    },
+    {
+      "name": "Alvarez-Valdes, Ramón"
+    },
+    {
+      "name": "Parreño, Francisco"
+    }
+  ],
+  "license": "MIT"
+}
